@@ -24,7 +24,7 @@ at the time of purchase. Also the shopkeeper can verify the details of the produ
 3.) It would enable Xiaomi to keep a track of it's products individually, the life cycle phases undergone, servicing trends, customer habits etc.
 This would help Xiaomi to make better business policies and improve upon their business strategies.
 
-# Direct Access using URL:
+# Direct Access using URL: https://block-pe-front-end1.vercel.app/
 
 We can access a limited number of features through the _Heroku_ provided URL such as SignUp/Login, Verifying the details using Hash Key, Fetching Transaction history and predicting resell value of an Old Xiaomin Product.
 
