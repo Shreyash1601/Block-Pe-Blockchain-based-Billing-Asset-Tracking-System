@@ -1,0 +1,16 @@
+.buttons{
+    display:flex;
+    justify-content: space-around;
+    margin-top:50px;
+}
+.buttons>div{
+    width:80px;
+    text-justify: center;
+    text-align: center;
+    color:rgb(75, 71, 71);
+    font-size: 18px;
+    height: auto;
+    border-radius:50%;
+    background-color: orange;
+    padding:8px;
+}

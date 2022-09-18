@@ -1,0 +1,101 @@
+.Card1{
+    height:auto;
+    width:80vw;
+    display: flex;
+    flex-direction:column;
+    margin:auto;
+    padding:20px;
+    text-align:center;
+    margin-top:50px;
+    border-radius:30px;
+    background-color: white;
+    box-shadow:5px 10px grey;
+}
+.head1{
+    font-size: 8vh;
+}
+.formi{
+    display:flex;
+    flex-flow: row;
+}
+.Reg{
+    display:flex;
+    justify-content: space-around;
+    margin-top:200px;
+    color:rgb(80, 77, 77);
+}
+.Login1{
+    border-radius:50%;
+    transform: scale(1);
+    font-weight: bold;
+    font-size: 20px;
+    height:100px;
+    width:100px;
+    margin:auto;
+    border:3px solid yellow;
+    background-color: orange;
+    color:rgb(61, 59, 59);
+}
+.entry{
+    width:200px;
+    height:40px;
+    margin:20px;
+    border:2px solid black;
+    border-radius:10px;
+}
+
+@media screen and (max-width: 600px) {
+
+.Card1{
+        height:auto;
+        width:80vw;
+        margin:auto;
+        padding:20px;
+        text-align:center;
+        margin-top:50px;
+        border-radius:30px;
+        background-color: white;
+        box-shadow:5px 10px grey;
+    }
+    .head1{
+        font-size: 30px;
+    }
+.formi{
+    display:flex;
+    flex-flow: column;
+    
+}
+.Login{
+    border-radius:50%;
+    transform: scale(1);
+    height:70px;
+    width:70px;
+    margin:auto;
+    border:3px solid yellow;
+    background-color: orange;
+    color:rgb(61, 59, 59);
+}
+.entry{
+    width:200px;
+    height:40px;
+    margin:20px;
+    border:2px solid black;
+    border-radius:10px;
+}
+.Reg{
+    display:flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-top:80px;
+    color:rgb(80, 77, 77);
+}
+.SignUp{
+    border-radius:50%;
+    transform: scale(1);
+    height:70px;
+    width:70px;
+    margin:;
+    border:3px solid yellow;
+    background-color: orange;
+}
+}

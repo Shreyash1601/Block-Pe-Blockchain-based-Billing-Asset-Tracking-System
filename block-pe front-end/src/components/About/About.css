@@ -1,0 +1,39 @@
+.Content{
+    text-align: center;
+    color:rgb(65, 60, 60);
+    word-spacing: 20px;
+    display: flex;
+    flex-flow: column;
+}
+.Content>h1{
+    font-size: 70px;
+}
+.matter{
+    display: flex;
+    flex-flow: row;
+    margin:50px;
+    justify-content: space-between;
+    text-align: left;
+    word-spacing: normal;
+    font-size: 25px;
+    color:black;
+}
+.matter>img{
+    width:600px;
+    height:400px;
+}
+
+@media only screen and (max-width:600px){
+.matter{
+    display: flex;
+    flex-flow: column-reverse;
+}
+.matter>img{
+    margin:auto;
+    width:100px;
+    height:200px;
+}
+.Content>h1{
+    font-size: 30px;
+}
+}

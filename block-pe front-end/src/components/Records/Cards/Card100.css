@@ -1,0 +1,35 @@
+.Card6{
+    width:auto;
+    padding:30px;
+    height:auto;
+    border-radius: 10px;
+    display:flex;
+    flex-flow: column;
+    text-align: center;
+}
+.DisplayAll{
+    font-size: 20px;
+    color:rgb(71, 67, 67);
+    width:100px;
+    height:100px;
+    margin-top:0;
+    margin-left:45vw;
+    border-radius:50%;
+    background-color: orange;
+}
+#SN{
+    font-size: 50px;
+}
+.details{
+    display: flex;
+    text-align: left;
+    flex-flow: row;
+    margin:auto;
+}
+.ans{
+    text-align: right;
+    word-wrap: break-word;
+}
+@media screen and (max-width: 600px) {
+
+}

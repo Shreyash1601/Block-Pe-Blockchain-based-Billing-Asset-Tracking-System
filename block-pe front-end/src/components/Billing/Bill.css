@@ -1,0 +1,101 @@
+.bill{
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.bill>h1{
+    text-align: center;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.Card3{
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+}
+.Card3>div>input{
+    font-size:25px;
+    width:30vw;
+    height:80px;
+    margin:50px;
+    border:2px solid orange;
+    border-radius:20px;
+}
+.Card3>div>select{
+    font-size:25px;
+    width:30vw;
+    height:80px;
+    margin:50px;
+    border:2px solid orange;
+    border-radius:20px;
+}
+.Butto{
+    display: flex;
+    flex-flow:row;
+    justify-content: space-around;
+}
+
+.Butto>div>button{
+    width:70px;
+    height:70px;
+    border: 2px solid orangered;
+    border-radius:50%;
+    background-color: orange;
+}
+#QR{
+    background-image: url("QR.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.QRcode{
+    width:100%;
+    height:100%;
+    margin-left:300px;
+}
+.done{
+    background-image: url("done.jpg");
+    width:400px;
+    height:300px;
+    margin:auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding:50px
+}
+div>h1{
+    text-align: center;
+    color:rgb(80, 73, 73)
+}
+@media only screen and  (max-width:600px){
+    
+.bill>h1{
+    font-size: 28px;
+}
+.Card3>div>input{
+    font-size:25px;
+    width:80vw;
+    height:50px;
+    margin:20px;
+    border:2px solid orange;
+    border-radius:20px;
+}
+.QRcode{
+    width:100%;
+    height:100%;
+    margin-left:100px;
+}
+.done{
+    background-image: url("done.jpg");
+    width:200px;
+    height:100px;
+    margin:auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding:50px
+}
+div>h1{
+    font-size: 25px;
+    word-wrap: break-word;
+    text-align: center;
+    color:rgb(80, 73, 73)
+}
+}
