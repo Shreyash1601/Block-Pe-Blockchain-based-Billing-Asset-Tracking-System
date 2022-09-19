@@ -52,8 +52,13 @@ After installing the dependencies, run the following command _nodemon ipfs1.js_ 
 # Other Relevant features:
 
 1.) Built in authentication using MI Store ID and password using _MongoDB_ and _NodeJS_.
+
 2.) Interactive E-Cart with built in price calculator.
+
 3.) Sending bills on WhatsApp and Email of customer.
+
 4.) Storing Transaction history on centralised MongoDB database with on demand fethcing of bills using Invoice number.
+
 5.) Machine Learning based suggesstion of resell price of old MI products.
+
 6.) QR code scanner for automatically fetching product details.
