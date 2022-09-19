@@ -1,17 +1,19 @@
 import react,{useState,useEffect} from 'react';
 import './Bill.css';
+import Spinner from '../Spinner/Spinner'
 import Button1 from '../Buttons/Button1'
 import { QrReader } from 'react-qr-reader';
 const Bill=(props)=>{
     useEffect(()=>{
     window.alert(`In order to receive Bill on Whatsapp, Kindly activate your Twilio sandbox by sending the code "join putting-stairs" to +1 (415) 523-8886\n
     \n Also before preparing the bill kindly ensure that the IPFS server is running...`)},[])
+    const [flag2,setFlag2]=useState(false)
     const [flag1,setFlag1]=useState(true)
     const [QR,setQR]=useState(true)
     const [hash2,setHash]=useState("")
     const [data,setData]=useState({
         StoreName:"",
-        Hash:"",
+        Hash:"Not available as IPFS is not running",
         DOM:"",
         LTS:"",
         PManufacture:"",
@@ -54,6 +56,7 @@ const Bill=(props)=>{
 
     const Submit=async (event)=>{
         event.preventDefault();
+        if(!flag2) setFlag2(!flag2)
         try{
         const res2=await fetch("http://localhost:5000/ipfs",{
             method:"POST",
@@ -85,6 +88,11 @@ const Bill=(props)=>{
         window.alert("Check whether IPFS server is running or not")
     }
         try{
+            setData((prev)=>{
+                return {
+                    ...prev,
+                    Invoice:inv(),
+                }})
         const res=await fetch("https://block-pe-backend.herokuapp.com/purchase",{
             method:"POST",
             headers:{
@@ -97,12 +105,14 @@ const Bill=(props)=>{
         if(res.status>=400 ||!result){
             console.log(result)
             window.alert("Inavlid Credentials")
+            setFlag2(false)
         }
         else{
             console.log(data)
         window.alert("Success!!")
         window.alert(JSON.stringify(data))
         setFlag1(false)
+        setFlag2(false)
 
         }
     }catch(err){
@@ -113,6 +123,13 @@ const Bill=(props)=>{
     return(
         <>
         <Button1/>
+        <div style={{marginLeft:"50vw",display:flag2?"block":"none"}}>
+        {
+            
+            <Spinner/>
+        }
+        </div>
+
         <div class="bill" style={{display:flag1?"block":"none"}}>
         <h1>Enter the following details of the product</h1>
         <div class="Card3" >
